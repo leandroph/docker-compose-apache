@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  web:
+    image: httpd:latest
+    container_name: my-apache-app
+    ports:
+      - "80:80"
+    volumes:
+      - ./smbarber:/usr/local/apache2/htdocs
